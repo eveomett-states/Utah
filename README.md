@@ -22,58 +22,56 @@ Obtain the following data from Restricting Data Hub
 
 [2020 election data](https://redistrictingdatahub.org/dataset/vest-2020-utah-precinct-boundaries-and-election-results-shapefile/)**:**  VEST 2020 Utah precinct and election results
 
-[2018 election data](https://redistrictingdatahub.org/dataset/vest-2018-utah-precinct-and-election-results/)**:**  VEST 2018 Utah precinct and election results
-
-[2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-utah-precinct-and-election-results/)**:**  VEST 2016 Utah precinct and election results
-
 [2020 county data](https://redistrictingdatahub.org/dataset/utah-county-pl-94171-2020/)  from 2020 Census Redistricting Data (P.L. 94-171) Shapefiles
+
+We attempted to incorporate the following data, but were unable to sufficiently clean them:[2018 election data](https://redistrictingdatahub.org/dataset/vest-2018-utah-precinct-and-election-results/) from VEST, [2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-utah-precinct-and-election-results/) from VEST, [2016 election data](https://redistrictingdatahub.org/dataset/mggg-utah-precincts-and-election-results/) from MGGG.
 
 # **Processing**
 
 Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup).
 
 ## Metadata
-* `CountyID`: County ID
-* `VistaID`: Precinct name and sub-precinct number
-* `PrcncID`: Precinct name
-* `SbPrcnc`: Sub-precinct number
-* `AliasNm`: Municipality name (where applicable)
-* `DsslvID`: Precinct unique identifier
-* `cnty_nm`: County name
-* `cnty_fp`: County FIPs code
-* `jrsdctn`: Jurisdiction name
-* `PRES16D`: Number of votes for 2016 Democratic presidential candidate 
-* `PRES16R`: Number of votes for 2016 Republican presidential candidate 
-* `PRES16I`: Number of votes for 2016 Independent presidential candidate (Evan McMullin)
-* `SEN16D`: Number of votes for 2016 Democratic senate candidate 
-* `SEN16R`: Number of votes for 2016 Republican senate candidate 
-* `GOV16D`: Number of votes for 2016 Democratic gubernatorial candidate 
-* `GOV16R`:  Number of votes for 2016 Republican gubernatorial candidate
-* `TOTPOP`: Total population 
-* `NH_WHITE`: White, non-hispanic, population
-* `NH_BLACK`: Black, non-hispanic, population
-* `NH_AMIN`: American Indian and Alaska Native, non-hispanic, population
-* `NH_ASIAN`: Asian, non-hispanic, population
-* `NH_NHPI`: Native Hawaiian and Pacific Islander, non-hispanic, population
-* `NH_OTHER`: Other race, non-hispanic, population
-* `NH_2MORE`: Two or more races, non-hispanic, population
-* `HISP`: Hispanic population
-* `H_WHITE`: White, hispanic, population
-* `H_BLACK`: Black, hispanic, population
-* `H_AMIN`: American Indian and Alaska Native, hispanic, population
-* `H_ASIAN`: Asian, hispanic, population
-* `H_NHPI`: Native Hawaiian and Pacific Islander, hispanic, population
-* `H_OTHER`: Other race, hispanic, population
-* `H_2MORE`: Two or more races, hispanic, population
-* `VAP`: Total voting age population
-* `HVAP`: Hispanic voting age population
-* `WVAP`: White, non-hispanic, voting age population
-* `BVAP`: Black, non-hispanic, voting age population
-* `AMINVAP`: American Indian and Alaska Native, non-hispanic, voting age population
-* `ASIANVAP`: Asian, non-hispanic, voting age population
-* `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population
-* `OTHERVAP`: Other race, non-hispanic, voting age population
-* `2MOREVAP`: Two or more races, non-hispanic, voting age population
-* `CD`: US congressional district ID
-* `SENDIST`: State Senate district ID
-* `HDIST`: State House district ID
+- `CountyID20`: County ID
+- `resultspre20`:
+- `vistapre20`: 
+- `CD`: Congressional district ID in 2021 enacted congressional map
+- `SEND`: State Senate district for 2021 State Senate Adopted Plan
+- `HDIST`: State House district for 2021 State House of Representatives Districts Plan
+- `TOTPOP`: Total population in 2020 Census
+- `NH_WHITE`: White, non-hispanic, population in 2020 Census
+- `NH_BLACK`: Black, non-hispanic, population in 2020 Census
+- `NH_AMIN`: American Indian and Alaska Native, non-hispanic, population in 2020 Census
+- `NH_ASIAN`: Asian, non-hispanic, population in 2020 Census
+- `NH_NHPI`: Native Hawaiian and Pacific Islander, non-hispanic, population in 2020 Census
+- `NH_OTHER`: Other race, non-hispanic, population in 2020 Census
+- `NH_2MORE`: Two or more races, non-hispanic, population in 2020 Census
+- `HISP`: Hispanic population in 2020 Census
+- `H_WHITE`: White, hispanic, population in 2020 Census
+- `H_BLACK`: Black, hispanic, population in 2020 Census
+- `H_AMIN`: American Indian and Alaska Native, hispanic, population in 2020 Census
+- `H_ASIAN`: Asian, hispanic, population in 2020 Census
+- `H_NHPI`: Native Hawaiian and Pacific Islander, hispanic, population in 2020 Census
+- `H_OTHER`: Other race, hispanic, population in 2020 Census
+- `H_2MORE`: Two or more races, hispanic, population in 2020 Census
+- `VAP`: Total voting age population in 2020 Census
+- `HVAP`: Hispanic voting age population in 2020 Census
+- `WVAP`: White, non-hispanic, voting age population in 2020 Census
+- `BVAP`: Black, non-hispanic, voting age population in 2020 Census
+- `AMINVAP`: American Indian and Alaska Native, non-hispanic, voting age population in 2020 Census
+- `ASIANVAP`: Asian, non-hispanic, voting age population in 2020 Census
+- `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population in 2020 Census
+- `OTHERVAP`: Other race, non-hispanic, voting age population in 2020 Census
+- `2MOREVAP`: Two or more races, non-hispanic, voting age population in 2020 Census
+- `ATG20D`: Number of votes for 2020 Democratic attorney general candidate
+- `ATG20R`: Number of votes for 2020 Republican attorney general candidate
+- `ATG20O`: Number of votes for 2020 other party's attorney general candidate
+- `AUD20D`: Number of votes for 2020 Democratic Auditor candidate
+- `AUD20R`: Number of votes for 2020 Republican Auditor candidate
+- `GOV20D`: Number of votes for 2020 Democratic gubernatorial candidate
+- `GOV20R`: Number of votes for 2020 Republican gubernatorial candidate
+- `GOV20O`: Number of votes for 2020 other party's gubernatorial candidate
+- `PRE20D`: Number of votes for 2020 Democratic Presidential candidate
+- `PRE20R`: Number of votes for 2020 Republican Presidential candidate
+- `PRE20O`: Number of votes for 2020 other party's  Presidential candidate
+- `TRE18R`: Number of votes for 2018 Republican Treasurer candidate
+- `TRE18O`: Number of votes for 2018 other party's Treasurer candidate
