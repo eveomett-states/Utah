@@ -32,8 +32,8 @@ Data were cleaned and aggregated in the corresponding jupyter notebook using MGG
 
 ## Metadata
 - `CountyID20`: County ID
-- `resultspre20`:
-- `vistapre20`: 
+- `resultspre20`: string giving what we believe is the precinct name
+- `vistapre20`: string giving what we believe is the precinct ID
 - `CD`: Congressional district ID in 2021 enacted congressional map
 - `SEND`: State Senate district for 2021 State Senate Adopted Plan
 - `HDIST`: State House district for 2021 State House of Representatives Districts Plan
